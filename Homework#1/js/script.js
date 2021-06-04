@@ -38,8 +38,8 @@ document.querySelector('.devices_price').innerHTML = (
     <li>Вартість всіх товарів: ${sumNumber}</li>
     <li>Сума без копійок з округлення в меншу сторону: ${integerSum }</li>
     <li>Сума товарів округлена до сотень: ${hundredsSum}</li>
-    <li>Парність: ${minNumber}</li>
-    <li>Сума решти: ${minNumber}</li>
+    <li>Парність: ${isEvenNumber}</li>
+    <li>Сума решти: ${differenceSum}</li>
     <li>Середнє значення: ${averageValueToHundredth}</li>
     <li>Знижка: ${discount}%</li>
     <li>Прибуток: ${profit}</li>
