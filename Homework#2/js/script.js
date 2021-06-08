@@ -15,15 +15,15 @@ while ( Number.isNaN( secondNumber ) || !( Number.isInteger( secondNumber ) ) ||
 }
 
 const askEvenNumber = confirm(`Do you need to consider even numbers?`);
-let minNumber = Math.min( firstNumber, secondNumber );
-let maxNumber = Math.max( firstNumber, secondNumber );
+const minNumber = Math.min( firstNumber, secondNumber );
+const maxNumber = Math.max( firstNumber, secondNumber );
 let sumNumbers = 0;
 
-for ( minNumber; minNumber <= maxNumber; minNumber ++ ) {
-  if ( askEvenNumber && minNumber % 2 == 0) { 
+for (let i = minNumber; i <= maxNumber; i ++ ) {
+  if ( askEvenNumber && i % 2 == 0) { 
       continue;
   }
-  sumNumbers += minNumber;  
+  sumNumbers +=i;  
 }
 
 document.querySelector( '.answer_list' ).innerHTML =(` 
