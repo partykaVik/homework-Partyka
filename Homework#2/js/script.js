@@ -1,16 +1,12 @@
  let firstNumber = Number( prompt( `Please, write first number (number must be integer)` ) );
 
-
-while ( Number.isNaN(firstNumber) || !( Number.isInteger(firstNumber ) ) || !firstNumber ) {
-
+while ( Number.isNaN(firstNumber) || !Number.isInteger(firstNumber) || !firstNumber ) {
     firstNumber = Number( prompt('Please try again (not a integer number)') ); 
 }
 
 let secondNumber = Number( prompt( `Please, write second number (number must be integer`) );
 
-
-while ( Number.isNaN( secondNumber ) || !( Number.isInteger( secondNumber ) ) || !secondNumber ) {
-
+while ( Number.isNaN( secondNumber ) || !Number.isInteger( secondNumber ) || !secondNumber ) {
     secondNumber = Number( prompt('Please try again (not a integer number)')); 
 }
 
