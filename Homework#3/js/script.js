@@ -63,11 +63,11 @@ function getPasword(length = 8) {
 
 // 8.Конвертувати доллари($) в гривні(UAH) і навпаки (регістр не важливий).
 
-function getExchangeMonye (monye){
+function getExchangeMonye(monye){
   monye = monye.toLowerCase()
   const dollar = 27;
   let exhcangeSum = 0;
-    const monyeNumber = monye.replace(/[$, uah]/gi, '');
+  const monyeNumber = monye.replace(/[$, uah]/gi, '');
   if (monye.indexOf('$') !== -1) {
     exhcangeSum = monyeNumber*dollar + ('UAH');
       } else if (monye.indexOf('UAH') !== -1){
