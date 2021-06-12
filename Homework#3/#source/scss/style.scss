@@ -3,7 +3,8 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: bisque;
-    margin-left: 20px;
+    margin-left: 500px;
+    font-size: 22px ;
 }
 
 h1 {
@@ -17,3 +18,10 @@ h2 {
     font-weight: 500;
 }
 
+button{
+height: 22px;
+width: 100px;
+font-size: 18px;
+border-radius: 25%;
+background-color: aqua;
+}
