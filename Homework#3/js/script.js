@@ -80,15 +80,15 @@ lengthPasword = 8
 document.querySelector("#func_8").onclick = function getExchangeMonye(monye){
 monye = (prompt(`Введіть суму і валюту`)).toLowerCase()
 while((monye.indexOf('uah') !== -1) && (monye.indexOf('$')) !== -1 ){
-  prompt(`Введіть валюту ($ або UAH)).toLowerCase()`)
+  prompt(`Введіть валюту ($ або UAH`).toLowerCase()
 }
 const dollar = 27;
 let exhcangeSum = 0;
 const monyeNumber = monye.replace(/[$, uah]/gi, '');
- if (monye.indexOf('UAH') !== -1){
-  exhcangeSum = monyeNumber/dollar + ('$');
-} else (monye.indexOf('$') !== -1);{
-  exhcangeSum = monyeNumber*dollar + ('UAH');
+ if (monye.indexOf('UAH') == -1){
+  exhcangeSum = (monyeNumber/dollar).toFixed(2) + ('$');
+} else if (monye.indexOf('$') !== -1) {
+  exhcangeSum = (monyeNumber*dollar).toFixed(2) + ('UAH');
 }
   return alert(`Ви отримаєте ${exhcangeSum}`);
 }
