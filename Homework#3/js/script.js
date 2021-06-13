@@ -76,7 +76,6 @@ document.querySelector("#func_7").onclick = function getPasword(){
         result += (Math.floor( ( Math.random() * ((lengthPasword - 1)  ) ) + 1));}
    return alert(`Ваш пароль "${result}"`);
   };
-
 // 8.Конвертувати доллари($) в гривні(UAH) і навпаки (регістр не важливий).
 
 document.querySelector("#func_8").onclick = function getExchangeMonye(){
