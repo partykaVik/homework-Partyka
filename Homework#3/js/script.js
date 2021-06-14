@@ -79,31 +79,31 @@ document.querySelector("#func_7").onclick = function getPasword(){
 // 8.Конвертувати доллари($) в гривні(UAH) і навпаки (регістр не важливий).
 
 document.querySelector("#func_8").onclick = function getExchangeMonye(){
-let amount = prompt(`Введіть суму і валюту`).toLowerCase()
-while((amount.indexOf('uah') === -1) && (amount.indexOf('$')) === -1 ){
-  prompt(`Введіть валюту ($ або UAH`).toLowerCase()
-}
-const dollar = 27;
-let exhcangeSum = 0;
-const monyeNumber = amount.replace(/[$, uah]/gi, '');
- if (amount.indexOf('$') === -1){
-  exhcangeSum = (monyeNumber/dollar).toFixed(2) + ('$');
-} else if (amount.indexOf('uah') === -1) {
-  exhcangeSum = (monyeNumber*dollar).toFixed(2) + ('UAH');
-}
-  return alert(`Ви отримаєте ${exhcangeSum}`);
-}
+  let amount = prompt(`Введіть суму і валюту`).toLowerCase()
+  while((amount.indexOf('uah') === -1) && (amount.indexOf('$')) === -1 ){
+    amount = prompt(`Введіть валюту ($ або UAH)`).toLowerCase()
+  }
+  const dollar = 27;
+  let exhcangeSum = 0;
+  const monyeNumber = amount.replace(/[$, uah]/gi, '');
+   if (amount.indexOf('$') === -1){
+    exhcangeSum = (monyeNumber/dollar).toFixed(2) + ('$');
+  } else if (amount.indexOf('uah') === -1) {
+    exhcangeSum = (monyeNumber*dollar).toFixed(2) + ('UAH');
+  }
+    return alert(`Ви отримаєте ${exhcangeSum}`);
+  }
 
 // 9. Піднести до степеня  без використання Math.pow та **.
 
 document.querySelector("#func_9").onclick = function exponentiationNumber() {
 let numberToPower = prompt(`Введіть число яке потрібно піднести до степеня`)
   while (isNaN(numberToPower)){
-  prompt(`Це має бути число`)
+  numberToPower = prompt(`Це має бути число`)
   }
 let power = prompt(`Введіть степінь для числа`)
   while (isNaN(power)){
-  prompt(`Це має бути число`)
+  numberToPower = prompt(`Це має бути число`)
   }
 let result = 1;
 if (power > 0){
@@ -122,7 +122,7 @@ if (power > 0){
   
 return alert(`Ваше число ${result}`);
 } 
-
+ 
 // 10. Видалення букви зі слова.
 
 document.querySelector("#func_10").onclick = function deleteLetter() {
