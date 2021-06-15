@@ -120,7 +120,7 @@ if (power > 0){
  }
 return alert(`Ваше число ${result}`);
 } 
-
+ 
 // 10. Видалення букви зі слова.
 
 document.querySelector("#func_10").onclick = function deleteLetter() {
