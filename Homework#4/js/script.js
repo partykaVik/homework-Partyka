@@ -4,15 +4,21 @@ const marks = [4, 5, 5, 3, 4, 5];
 
 
 //1
-function getPairs() {
-  const pairs = [
-    [students[0], students[5],],
-    [students[1], students[3],],
-    [students[4], students[2],],
-  ].concat()
-  return pairs
-}
-const studentPairs = getPairs()
+function getPairs(students){
+  const girl = [];
+  const boy = [];
+  let pairs = [];
+  for(let i = 0; i < students.length; i++)
+    if ( students[i].split("").slice(-1).pop() === "а"){
+      girl.push(students[i])}
+    else {
+        boy.push(students[i]) }
+  for(let i = 0; i < girl.length; i++){
+    
+    pairs.push([girl[i], boy[i]])}
+    return pairs
+  }
+const studentPairs = getPairs(students)
 console.log(studentPairs)
 
 //2
