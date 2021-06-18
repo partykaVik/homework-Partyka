@@ -1,4 +1,4 @@
-// 1. Масив з випадкових чисел в заданої велечини і діапазону. 
+// 1. Визначення середнього значення всіх чисел масиву(не цілі числа ігноруються)
 
 function getAverage(...number) {  
     const num = number.filter(Number.isInteger); 
@@ -7,9 +7,9 @@ function getAverage(...number) {
     } 
     return num.reduce((prev, item) =>  (prev+ item)) / num.length  
   }
-   //console.log(getRandomArray(15, 1, 100))
+   console.log(getRandomArray(15, 1, 100))
 
-   //2. Визначення середнього значення всіх чисел масиву(не цілі числа ігноруються)
+   //2. Масив з випадкових чисел в заданої велечини і діапазону.
    
    function getRandomArray(size, min, max) { 
     if (!Number.isInteger(size) || !Number.isInteger(min) || !Number.isInteger(max)){  
@@ -20,7 +20,7 @@ function getAverage(...number) {
      randomArray[i]= Math.floor(Math.random()*(max-min)+min); 
     return randomArray; 
    };
- //console.log(getAverage(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2))
+ console.log(getAverage(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2))
 
  //3 Визначити числа що на ціло діляться на 5.
 function getDevideFiveNumbers(numbers) {  
