@@ -2,12 +2,9 @@
 
 function getAverage(...number) {  
     const num = number.filter(Number.isInteger); 
-    if (!Number.isNaN(num)){ 
-      return 'Ви не ввели жодного цілого числа' 
-    } 
-    return num.reduce((prev, item) =>  (prev+ item)) / num.length  
+    return num.reduce((prev, item) =>  (prev+ item)) / num.length;  
   }
-   console.log(getRandomArray(15, 1, 100))
+   console.log(`getRandomArray(15, 1, 100) = ${getRandomArray(15, 1, 100)}`)
 
    //2. Масив з випадкових чисел в заданої велечини і діапазону.
    
@@ -20,10 +17,10 @@ function getAverage(...number) {
      randomArray[i]= Math.floor(Math.random()*(max-min)+min); 
     return randomArray; 
    };
- console.log(getAverage(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2))
+ console.log(`getAverage(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2) = ${getAverage(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2)}`)
 
  //3 Визначити числа що на ціло діляться на 5.
-function getDevideFiveNumbers(numbers) {  
+function getDevideFiveNumbers(...numbers) {  
     const num = numbers.filter(Number.isInteger);  
     if (Number.isNaN(num)){  
       return 'Ви не ввели жодного цілого числа'  
@@ -36,7 +33,7 @@ function getDevideFiveNumbers(numbers) {
   }  
   return devideFive  
   }  
-  console.log(getDevideFiveNumbers(1, 2, 3, 4, 5, 6))
+  console.log(`getDevideFiveNumbers(1, 2, 3, 4, 5, 6)} = ${getDevideFiveNumbers(1, 2, 3, 4, 5, 6)}`)
 
  //4 Масив який рахує кількість позитивних чисел (не цілі числа ігноруються)
 
@@ -53,11 +50,11 @@ function countPositiveNumbers(...numbers){
     } 
       return positiveNumber.length 
   }
-  console.log(countPositiveNumbers(1, -2, 3, -4, -5, 6))
+  console.log(`countPositiveNumbers(1, -2, 3, -4, -5, 6) = ${countPositiveNumbers(1, -2, 3, -4, -5, 6)}`)
 
   //5. Масив не парних чисел
 
-function countNotEvenNumbers(numbers){ 
+function countNotEvenNumbers(...numbers){ 
     const num = numbers.filter(Number.isInteger);   
     if (Number.isNaN(num)){   
       return 'Ви не ввели жодного цілого числа'   
@@ -71,7 +68,7 @@ function countNotEvenNumbers(numbers){
       return notEvenNumbers 
   }
 
-  console.log(countNotEvenNumbers(1, 2, 3, 4, 5, 6))
+  console.log(`countNotEvenNumbers(1, 2, 3, 4, 5, 6) = ${countNotEvenNumbers(1, 2, 3, 4, 5, 6)}`)
 
  //6 Розбиває кожну строку на склади з трьох символів (без пробілів)
 
@@ -80,11 +77,11 @@ function divideByThree(str) {
   return str.match(/.{1,3}/g); 
 }
 
-console.log(divideByThree('Commander'))
+console.log(`divideByThree ('Commander') = ${divideByThree('Commander')}`)
 
 //7. Визначити медіану числа (не цілі числа ігноруються).
 
-function getMedian(numbers) { 
+function getMedian(...numbers) { 
   const num = numbers.sort((a, b) => a - b).filter(Number.isInteger); 
   let median = 0; 
   if (num.length % 2 === 0){ 
@@ -94,4 +91,4 @@ function getMedian(numbers) {
   } 
   return median 
   }
-  console.log(getMedian(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2))
+  console.log(`getMedian(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2) = ${getMedian(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2)}`)
