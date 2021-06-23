@@ -32,7 +32,7 @@ const getSubjects = student => {
     getUserName(subject).replaceAll('_', " ")
   )}
 
-console.log(`Список студентів для студента ${students[1].name} ${getSubjects(students[1])}`)
+console.log(`Список предметів для студента ${students[1].name} ${getSubjects(students[1])}`)
 
 // 2. Середня оцінка для студента
 
