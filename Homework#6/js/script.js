@@ -28,12 +28,9 @@ const students = [{
 // 1. Список предметів для студента
 
 const getSubjects = student => {
-  let studentSubjects = Object.keys(student.subjects);
-  studentSubjects = studentSubjects.map(subject =>
+  return Object.keys(student.subjects).map(subject =>
     getUserName(subject).replaceAll('_', " ")
-  );
-  return studentSubjects;
-}
+  )}
 
 console.log(`Список студентів для студента ${students[1].name} ${getSubjects(students[1])}`)
 
@@ -92,13 +89,14 @@ const getBestStudent = students => {
 console.log(`Кращого студента звати ${getBestStudent(students)}`)
 
 const calculateWordLetters = word => {
-  word = word.toLowerCase()
-  const letter = word.split(``)
+  const wordLowerCase = word.toLowerCase()
+  const letter = wordLowerCase.split(``)
   const wordLetters = {};
-  for (let i = 0; i < word.length; i++) {
-    Object.assign(wordLetters, {[letter[i]]: calcLetter(word, letter[i])});
+  for (let i = 0; i < wordLowerCase.length; i++) {
+    Object.assign(wordLetters, {[letter[i]]: calcLetter(wordLowerCase, letter[i])});
   }
-  return wordLetters
+  return wordLetters;
+
 }
 console.log(calculateWordLetters(`Test`))
 
@@ -117,8 +115,8 @@ function getUserName(name) {
 
 // Функція для підрахунку букв у слові
 function calcLetter(word, letter) {
-  word = word.toLowerCase()
-  letter = letter.toLowerCase()
-  const numberOfLetter = word.split(letter).length - 1
+  const wordToCheck = word.toLowerCase()
+  const letterToCheck = letter.toLowerCase()
+  const numberOfLetter = wordToCheck.split(letterToCheck).length - 1
   return numberOfLetter
 }
