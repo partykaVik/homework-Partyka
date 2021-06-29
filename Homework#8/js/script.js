@@ -37,14 +37,11 @@ function getMyTaxes(salary) {
 
 //4
 function getMySalary(country) {
+  const infoItInCountry = {}
   const salary = getRandomNumber(1500, 2000);
   const taxes = salary*this.tax;
-  const profit = salary - taxes;
-  const infoItInCountry = {
-    "salary": salary,
-    "taxes" :taxes,
-    "profit": profit,
-  }
+  const profit = salary - taxes
+  Object.assign(infoItInCountry, {"salary": salary}, {"taxes" :taxes},{"profit": profit} )
     return infoItInCountry
 }
  
