@@ -41,9 +41,9 @@ function getMySalary(country) {
   const taxes = salary*this.tax;
   const profit = salary - taxes;
   const infoItInCountry = {
-    "salary": salary,
-    "taxes" :taxes,
-    "profit": profit,
+    salary,
+    taxes,
+    profit,
   }
     return infoItInCountry
 }
