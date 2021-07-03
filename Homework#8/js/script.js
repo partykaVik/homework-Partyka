@@ -54,28 +54,27 @@ console.group(`Basic`)
 const ostap = new Student ('Остап Бендер','Вищої Школи Психотерапії м.Одеса',3, 5,4,4,5)
 
 console.group(`Оцінки зараз`)
-  console.log(`Оцінки студента: ` + ostap.marks)
+  console.log(`Оцінки студента: ` + ostap.studentMarks)
   console.log(`Середня оцінка студента = `+ ostap.averageMarks)
 console.groupEnd()
 
 ostap.addedStudentMark = 5 
 
 console.group(`Оцінки після отримання ще однієї відмітки`)
-  console.log(`Оцінки студента стали: ` + ostap.marks)
+  console.log(`Оцінки студента стали: ` + ostap.studentMarks)
   console.log(`Середня оцінка студента тепер = `+ ostap.averageMarks)
 console.groupEnd()
 
 console.log(ostap.dismiss())
 console.group(`Студента виключено`)
-  console.log(`Оцінки студента: ` + ostap.marks)
+  console.log(`Оцінки студента: ` + ostap.studentMarks)
 console.groupEnd()
 
 ostap.recover()
 
 console.group(`Студента поновлено`)
-  console.log(`Оцінки студента: ` + ostap.marks)
+  console.log(`Оцінки студента: ` + ostap.studentMarks)
   console.log(`Середня оцінка студента = `+ ostap.averageMarks)
-  console.log(ostap);
 console.groupEnd()
 
 console.groupEnd()
