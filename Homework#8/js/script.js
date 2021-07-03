@@ -12,6 +12,11 @@ class Student {
       return this.marks = marks;
     }
      }
+ 
+get studentMarks (){
+  return this.marks
+}     
+
  get studentInfo() {
  return `Студент ${this.course}го курсу ${this.university} ${this.fullName}`
  }
