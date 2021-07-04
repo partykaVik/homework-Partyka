@@ -1,0 +1,30 @@
+@import "nullstyle.scss";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    padding-left: 40px;
+    font-size: 22px ;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#c1 {
+    border: 3px solid black;
+    margin: 40px;
+}
+input {
+    border: 2px solid black;
+    width: 100px;
+    height: 30px;
+    margin: 15px;
+  }
