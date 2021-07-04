@@ -21,12 +21,12 @@ function generateBlocks(row = 5, columns = 5 ) {
 generateBlocks()
 
 const form = document.querySelector('.form_value'); 
-const getBlockForSize = form.addEventListener('click', () => {
+const getBlockForSize = form.addEventListener('keypress', () => {
   const row = document.getElementById('raw').value;
   const columns = document.getElementById('columns').value;
   generateBlocks(row, columns)
   interval = setInterval(generateBlocks, 1000, row, columns);
-  }); 
+}); 
 
 
 
