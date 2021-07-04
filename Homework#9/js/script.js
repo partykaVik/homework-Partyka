@@ -21,7 +21,7 @@ function generateBlocks(row = 5, columns = 5 ) {
 generateBlocks()
 
 const form = document.querySelector('.form_value'); 
-const getBlockForSize = form.addEventListener('keypress', function (e) {
+const getBlockForSize = form.addEventListener('keypress', (e) => {
     if (e.key === 'Enter'){
   const row = document.getElementById('raw').value;
   const columns = document.getElementById('columns').value;
