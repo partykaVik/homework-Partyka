@@ -1,0 +1,77 @@
+@import "nullstyle.scss";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/fon58layzz1.jpg");
+    padding-left: 40px;
+    font-size: 22px ;
+    }
+
+h1 {
+    margin-top: 20px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #91a716;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #91a716;
+    text-align: center;
+}
+
+kbd {
+    color: rebeccapurple;
+    font-size: 20;
+}
+.audio-key {
+    display: flex;
+}
+
+.key {
+    margin:  50px 10px 50px 10px;
+    flex-direction: row;
+    
+}
+span{
+    opacity: 1;
+    font-size: 18px;
+    z-index: -9999;
+    color: #164ca7;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    kdb {
+        position: relative;
+        color: #a71635;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.7px;
+        text-align: center;
+        z-index: -9999;
+    }
+}
+button {
+    position: relative;
+    margin: 0;
+    opacity: 0.7;
+    padding: 10px 10px;
+    height: 100px;
+    width: 180px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    cursor: pointer;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+    border-radius: 10px;
+    color: #1dff43;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: inherit;
+    z-index: 999;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+  
