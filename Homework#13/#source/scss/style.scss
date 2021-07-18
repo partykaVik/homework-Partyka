@@ -1,0 +1,88 @@
+@import 'nullstyle.scss';
+body {
+	background: url('/img/wallpapers.jpg') 0 0 / cover no-repeat fixed;
+	font-family: 'Lobster Two', cursive;
+	color: rgb(201, 61, 36);
+	padding: 15px;
+	font-size: 25px;
+}
+h1 {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 25px;
+	font-weight: 500;
+	font-family: 'Lobster Two', cursive;
+}
+.info-container {
+	display: flex;
+}
+.get-character-button {
+}
+.character {
+	display: flex;
+	width: device-width;
+	height: auto;
+	flex-wrap: wrap;
+}
+
+.character-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 500px;
+	height: 500px;
+	background-color: rgb(79, 80, 80);
+	border: 1px solid;
+	opacity: 0.9;
+	font-size: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: auto;
+	align-items: center;
+	img {
+		max-width: 300px;
+		max-height: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	p {
+		color: rgb(255, 166, 0);
+		margin-left: auto;
+		margin-right: auto;
+		vertical-align: bottom;
+		padding: 5px;
+	}
+}
+.planet {
+	background-color: black;
+	opacity: 0.8;
+	li {
+		font-size: 25px;
+	}
+}
+.planet-info {
+	margin-left: 25px;
+	padding: 10px;
+	font-size: 25px;
+	color: white;
+	list-style-type: circle;
+}
+
+.choose-info-container {
+	display: flex;
+}
+
+button,
+select {
+	width: auto;
+	height: 30px;
+	border: black solid 1px;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 2px;
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+	opacity: 0.7;
+}

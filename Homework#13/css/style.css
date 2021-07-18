@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  background: url("/img/wallpapers.jpg") 0 0/cover no-repeat fixed;
+  font-family: 'Lobster Two', cursive;
+  color: #c93d24;
+  padding: 15px;
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: 'Lobster Two', cursive;
+}
+
+.info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.character {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: device-width;
+  height: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.character-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 500px;
+  height: 500px;
+  background-color: #4f5050;
+  border: 1px solid;
+  opacity: 0.9;
+  font-size: 20px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.character-info img {
+  max-width: 300px;
+  max-height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.character-info p {
+  color: #ffa600;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: bottom;
+  padding: 5px;
+}
+
+.planet {
+  background-color: black;
+  opacity: 0.8;
+}
+
+.planet li {
+  font-size: 25px;
+}
+
+.planet-info {
+  margin-left: 25px;
+  padding: 10px;
+  font-size: 25px;
+  color: white;
+  list-style-type: circle;
+}
+
+.choose-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+button,
+select {
+  width: auto;
+  height: 30px;
+  border: black solid 1px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 2px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  opacity: 0.7;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Homework#13</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Festive&family=Zen+Tokyo+Zoo&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="block">
+			<h1>Homework #13</h1>
+			<h2>Робота з сервером</h2>
+			<div class="container">
+				<div class="choose-info-container">
+					<div class="get-character-button">
+						<button id="getCharacterInformation">
+							Get Information about character from episode
+						</button>
+						<p>Chose film</p>
+						<select name="Chose film" id="film">
+							<option value="1">"A New Hope"</option>
+							<option value="2">"The Empire Strikes Back"</option>
+							<option value="3">"Return of the Jedi"</option>
+							<option value="4">"The Phantom Menace"</option>
+							<option value="5">"Attack of the Clones"</option>
+							<option value="6">"Revenge of the Sith"</option>
+						</select>
+					</div>
+					<div class="planet-button">
+						<button id="getPlanetInformation">
+							Get Information about planet
+						</button>
+						<button id="nextPagePlanet">Next page planet</button>
+						<button id="prevPagePlanet">Prev page planet</button>
+					</div>
+				</div>
+
+				<div class="info-container">
+					<div class="character" id="character-info"></div>
+					<div class="planet"><ul id="planet-info"></ul></div>
+				</div>
+			</div>
+			<script src="js/script.js"></script>
+		</div>
+	</body>
+</html>
