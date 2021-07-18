@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 body {
-  background: url("/img/wallpapers.jpg") 0 0/cover no-repeat fixed;
+  background: url("../img/wallpapers.jpg") 0 0/cover no-repeat fixed;
   font-family: 'Lobster Two', cursive;
   color: #c93d24;
   padding: 15px;
