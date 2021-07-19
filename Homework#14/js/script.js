@@ -1,4 +1,3 @@
-//const testText =document.getElementsByClassName('test-text').style.fontSize = '50px';
 const nextValueButton = document.getElementById('nextValue');
 const increaseFontButton = document.getElementById('increaseFontSize');
 const decreaseFontButton = document.getElementById('decreaseFontSize');
@@ -16,11 +15,11 @@ function* createGeneration() {
 let fontSize = 14;
 
 function* increaseFontGeneration() {
-	for (; fontSize < Infinity; fontSize = fontSize + 2) yield fontSize;
+	for (; fontSize < 48; fontSize = fontSize + 2) yield fontSize;
 }
 
 function* decreaseFontGeneration() {
-	for (; fontSize < Infinity; fontSize = fontSize - 2) yield fontSize;
+	for (; fontSize > 2; fontSize = fontSize - 2) yield fontSize;
 }
 
 nextValueButton.addEventListener('click', () => {

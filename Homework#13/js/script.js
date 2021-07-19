@@ -34,8 +34,6 @@ async function getInfoAboutPlanet(url) {
 		});
 }
 
-//`<div class="person"><img src="img/${info.name}.jpeg"/><p>Name person ${info.name}, birth year person ${info.birth_year} is ${info.gender} gender<p></div>`;
-
 async function getCharacterInfo(url) {
 	request(url).then(info => {
 		return (characterInfo.innerHTML += `<div class="character-info"><p> ${info.name}</p><img src="img/${info.name}.jpg"/> 
