@@ -1,0 +1,22 @@
+{
+	"name": "homework16",
+	"version": "1.0.0",
+	"description": "webpack",
+	"main": "index.js",
+	"scripts": {
+		"dev": "webpack --mode development",
+		"build": "webpack --mode production"
+	},
+	"keywords": [
+		"homework",
+		"cursor"
+	],
+	"author": "Partyka Viktor",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.14.8",
+		"babel-loader": "^8.2.2",
+		"webpack": "^5.47.1",
+		"webpack-cli": "^4.7.2"
+	}
+}
