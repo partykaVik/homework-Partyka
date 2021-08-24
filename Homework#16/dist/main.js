@@ -1,1 +1,0 @@
-!function*(){for(let e=1;e<1/0;e++)yield e}();
